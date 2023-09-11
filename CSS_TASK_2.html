@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS TASK-2</title>
+    <style>
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+    }
+    .navbar-vertical {
+        width: 150px;
+        background-color: lightblue;
+        margin-top: 30px;
+        
+    }
+    .navbar-vertical li {
+        list-style-type: none;
+    }
+    
+    .navbar-vertical li a {
+        display: block;
+        color: darkblue;
+        text-decoration: none;
+        padding: 8px 16px;
+    }
+    .navbar-vertical li:first-child {
+        background-color: orange;
+    }
+    .navbar-vertical li:first-child a {
+        color: white;
+    }
+    .navbar-horizontal {
+        display: flex;
+        list-style-type: none;
+        padding-left: 0;
+        width: 365px;
+        background-color: lightgrey;
+    }
+    .navbar-horizontal li:first-child {
+        background-color: darkgrey;
+    }
+    .navbar-horizontal li:first-child a {
+        color: white;
+    }
+    
+    .navbar-horizontal li a {
+        display: block;
+        color: darkblue;
+        text-decoration: none;
+        padding: 20px 16px;
+    }
+    .navbar-horizontal li:not(:last-child) {
+    border-right: 1px solid darkblue; 
+}
+        </style>
+
+</head>
+<body>
+    <h2 style="text-align: center;"> CSS TASK - 2</h2>
+    <br/> <br/>
+    
+      <div class="container">
+      <!-- Vertical navbar -->
+      <p><b> Vertical Navigation Bar</b></p>
+      <ul class="navbar-vertical" style="margin: 0;padding: 0;">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Java</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#" >HTML</a></li>
+          <li><a href="#" >Bootstrap</a></li>
+      </ul> 
+      <br/>
+      
+
+      <!-- Horizontal navbar -->
+      <p><b> Horizontal Navigation Bar</b></p>
+      <ul class="navbar-horizontal" >
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Java</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#" >HTML</a></li>
+        <li><a href="#" >Bootstrap</a></li>
+    </ul>
+
+</div>
+      
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS TASK-6</title>
+    <style>
+   .container {
+  padding: 16px;
+  width: 50%;
+  justify-content: center;
+   margin: 0 auto; 
+  display: flex; 
+  flex-direction: column;
+   }
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  
+}
+
+img.profile {
+  width: 15%;
+  border-radius: 50%;
+}
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.cancelbtn {
+  width: 80px;
+  background-color: #f44336;
+}
+
+.button-container {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.fp a {
+  color: black; 
+}
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;"> CSS TASK - 6</h2>
+    <form>
+    <div class="imgcontainer">
+        <img src="profile.png" alt="Profile" class="profile">
+      </div>
+
+    <div class="container">
+        <label ><b>Username</b></label>
+        <input type="text" placeholder="Enter Username">
+  
+        <label><b>Password</b></label>
+        <input type="password" placeholder="Enter Password">
+          
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked"> Remember me
+        </label>
+      </div>
+
+      <div class="button-container" style="background-color:#f1f1f1">
+        <button class="cancelbtn">Cancel</button>
+        <span class="fp">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+</body>
+</html>
